@@ -1,7 +1,7 @@
 // Import the React and ReactDOM libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 // Create a react component
 const App = () => {
   return (
@@ -77,7 +77,7 @@ const App = () => {
         }}
       > Portfolio
       </a>
-      <a href="/aboutme" style={{
+      <Link to="/aboutme" style={{
         textDecoration: "none",
         color: "white",
         position: "relative",
@@ -98,7 +98,7 @@ const App = () => {
           backgroundPosition: "right center"
         }
       }}> About me
-      </a>
+      </Link>
 
 
       <a href="/#contact" style={{
