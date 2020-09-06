@@ -1,0 +1,124 @@
+.backgroundImage {
+  background-image: url(images/c.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+.flex-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  font-family: Brush Script Std, cursive;
+  color: #7a00e0;
+}
+.h2 {
+  font-family: Brush Script Std, cursive;
+  color: #7a00e0;
+}
+.h3 {
+  font-family: Brush Script Std, cursive;
+  color: #7a00e0;
+}
+.h3-me {
+  font-family: Brush Script Std, cursive;
+  color: #7a00e0;
+}
+.photo {
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.button-portfolio {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.button-portfolio:hover {
+  background-position: right center;
+}
+
+.button-aboutme {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #7a00e0 0%,
+    #dea9f5 51%,
+    #7a00e0 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.button-aboutme:hover {
+  background-position: right center;
+}
+
+.button-contact {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #dea9f5 51%,
+    #9eefe1 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.button-contact:hover {
+  background-position: right center;
+}
+.img {
+  width: 30px;
+  padding: 5px;
+  margin: 5px;
+}
