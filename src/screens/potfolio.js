@@ -6,7 +6,6 @@ const Portfolio = () => {
     return (
         <div
             className="backgroundImage"
-            id="root"
         >
             <div className="flex-button">
                 <Header />

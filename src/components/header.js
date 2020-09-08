@@ -6,8 +6,7 @@ const Header = () => {
     return (
 
         <div>
-            <Link to
-                href="/portfolio"
+            <Link to="/portfolio"
                 className="button-portfolio"
             >
                 {" "}

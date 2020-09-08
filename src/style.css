@@ -9,14 +9,13 @@
 }
 .flex-center {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .flex-center-img {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .h1 {
   font-family: Brush Script Std, cursive;
