@@ -8,7 +8,7 @@ const Contact = () => {
             className="backgroundImage"
         >
             <div className="flex-button">
-                <Header />
+
             </div>
         </div>
     );

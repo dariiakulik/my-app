@@ -20,19 +20,21 @@ const Home = () => {
                 <a href="https://github.com/dariiakulik">
                     <img
                         className="img"
-
+                        alt="github"
                         src="github.png"
                     />
                 </a>
                 <a href="https://www.linkedin.com/in/dariia-kulikova-6b48ab172">
                     <img
                         className="img"
+                        alt="linkedin"
                         src="Linkedin.png"
                     />
                 </a>
                 <a href="https://resume.io/r/zeT2qZVHx">
                     <img
                         className="img"
+                        alt="cv"
                         src="cv.jpeg"
                     />
                 </a>

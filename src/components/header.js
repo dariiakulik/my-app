@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-
 const Header = () => {
     return (
-
         <div>
-            <Link to="/portfolio"
+            <Link
+                to="/portfolio"
                 className="button-portfolio"
             >
                 {" "}
@@ -19,7 +17,6 @@ const Header = () => {
                 {" "}
           About me
         </Link>
-
             <Link
                 to="/contact"
                 className="button-contact"
@@ -28,9 +25,6 @@ const Header = () => {
           Contact
         </Link>
         </div>
-
-
-
     )
 }
 

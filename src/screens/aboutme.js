@@ -8,7 +8,7 @@ const AboutMeScreen = () => {
       className="backgroundImage"
     >
       <div className="flex-button">
-        <Header />
+
       </div>
       <div className="flex-center">
         <h1
@@ -18,6 +18,7 @@ const AboutMeScreen = () => {
       </h1>
         <img className="photo"
           src="ph.jpg"
+          alt="myphoto"
         />
 
         <h2

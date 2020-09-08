@@ -8,7 +8,7 @@ const Portfolio = () => {
             className="backgroundImage"
         >
             <div className="flex-button">
-                <Header />
+
             </div>
         </div>
     );
