@@ -26,7 +26,7 @@ const Home = () => {
                             <span class="circle" aria-hidden="true">
                                 <span class="icon arrow"></span>
                             </span>
-                            <span class="button-text">Learn More</span>
+                            <span class="button-text">Portfolio</span>
 
 
 

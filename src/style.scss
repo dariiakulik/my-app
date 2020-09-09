@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 
 $bg: #f3f8fa;
-$white: #f3f8fa;
-$black: #7a00e0;
+$white: white;
+$fiolet: #7a00e0;
+$green: #9eefe1;
 
 @mixin transition(
   $property: all,
@@ -49,12 +50,11 @@ button {
     height: auto;
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-      position: relative;
-      display: block;
-      margin: 0;
+      display: flex;
+      align-items: center;
       width: 3rem;
       height: 3rem;
-      background: $black;
+      background: $green;
       border-radius: 1.625rem;
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -92,7 +92,7 @@ button {
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: $black;
+      color: $fiolet;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
