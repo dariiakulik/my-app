@@ -1,14 +1,17 @@
 //Import the React and ReactDOM libraries
 import React from "react";
-import Header from "../components/header.js";
 // Create a react component
 const Portfolio = () => {
     return (
         <div
             className="backgroundImage"
         >
-            <div className="flex-button">
-
+            <div className="flex-center">
+                <h1
+                    className="h1"
+                >
+                    My Portfolio
+                </h1>
             </div>
         </div>
     );

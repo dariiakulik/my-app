@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
     return (
         <div
@@ -15,7 +16,25 @@ const Home = () => {
                 >
                     developer
         </h3>
+                <div id="container">
+                    <Link
+                        to="/portfolio"
+                    >
+                        {" "}
+
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Learn More</span>
+
+
+
+                        </button>
+                    </Link>
+                </div>
             </div>
+
             <div className="flex-center-img">
                 <a href="https://github.com/dariiakulik">
                     <img
