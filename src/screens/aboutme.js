@@ -1,56 +1,82 @@
 //Import the React and ReactDOM libraries
-import React from "react";
+import React, { useState } from "react";
+import about from "./aboutme.json"
+
+
+
 // Create a react component
 const AboutMeScreen = () => {
-  return (
-    <div
-      className="backgroundImage"
-    >
-      <div className="flex-button">
 
-      </div>
-      <div className="flex-center">
-        <h1
-          className="h1"
-        >
-          About me
-      </h1>
-        <img className="photo"
-          src="ph.jpg"
-          alt="myphoto"
-        />
+  const [setActive] = useState()
 
-        <h2
-          className="h2"
+  const OnScroll = e => {
+    setActive(e)
+  }
+  /*const block = document.getElementById('block');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio < 0.5) { return; }
+      block.className = [entry.target.className];
+    });
+  }, {
+    threshold: [0.5, 0.5]
+  });
 
-        >
-          My name is Dariia Kulikova.{" "}
-        </h2>
+ <section class="blue"></section>
+        <section class="green"></section>
         <h3
           className="h3-me"
         >
-          {" "}
-        I'm 22 years old. I love programming, traveling, discovering the culture
-        of different countries and nationalities.
-        <br /> I used to live in 4 countries :{" "}
-          <li>
-            First one is Poland where I made my univercity degree in Univercity of
-          Economis in Katowice. <br />
-          My major is Informatics and Econometrics.
-        </li>
-          <li>
-            Second country is USA. During my study in university I was on exchange
-            programm 'Work and Travel USA'.
-          <br /> In USA I spend 5 month in state Maine.{" "}
-          </li>
-          <li>
-            The third counry is UAE where I was working in hospitality 9 month.
-        </li>
-          <li>The last one is Turkey where I was working in tourism 6 month.</li>
+          <section class="red" >  </section>
         </h3>
+  Array.from(document.getElementsByTagName('section')).forEach(section => observer.observe(section))
+
+*/
+
+
+  return (
+    <div className="scrollbar" OnScroll={OnScroll} style={{ overflowY: "scroll" }}>
+      <div
+        className="backgroundImage"
+      >
+        <div className="flex-button">
+
+        </div>
+        <div className="flex-center">
+          <h1
+            className="h1"
+          >
+            About me
+      </h1>
+
+          <img className="photo"
+            src="ph.jpg"
+            alt="myphoto"
+          />
+
+          <h2
+            className="h2"
+
+          >
+            {about.Name}
+          </h2>
+          <h3
+            className="h3-me"
+          >
+            {about.aboutme}<br />
+            {about.aboutme2}<br />
+            {about.university}<br />
+
+
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            {about.langueges} </h3>
+        </div>
       </div>
-    </div>
-  );
-};
+    </div >
+  )
+
+}
+
+
 
 export default AboutMeScreen;
