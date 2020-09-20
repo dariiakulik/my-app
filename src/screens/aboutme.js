@@ -12,7 +12,7 @@ class AboutMeScreen extends React.Component {
 
   handleScroll = () => {
     if (window.pageYOffset > 0) {
-      if (!this.state.className) {
+      if (this.state.className) {
         this.setState({ className: "backgroundImage" });
       }
     } else {
