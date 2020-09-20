@@ -16,9 +16,9 @@ class AboutMeScreen extends React.Component {
         this.setState({ className: "backgroundImage" });
       }
     } else {
-      if (this.state.className) {
-        this.setState({ className: "backgroundImageDifferent" });
-      }
+
+      this.setState({ className: "backgroundImageDifferent" });
+
     }
 
   }
