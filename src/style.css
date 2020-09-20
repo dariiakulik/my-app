@@ -3,6 +3,11 @@
   width: 100vw;
   height: 100vh;
 }
+.backgroundImageDifferent {
+  background-image: url(images/b.jpg);
+  width: 100vw;
+  height: 100vh;
+}
 .flex-button {
   background-color: white;
   display: flex;
@@ -47,7 +52,10 @@
 }
 .scrollbar {
   background-color: #f5e9f5;
+  width: 100vw;
+  height: 100vh;
 }
+
 .button-portfolio {
   text-decoration: none;
   outline: none;
@@ -131,34 +139,6 @@
   margin: 5px;
 }
 .block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.red {
-  background-image: url(images/b.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.green {
-  background-image: url(images/c.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.blue {
-  background-image: url(images/b.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-section {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

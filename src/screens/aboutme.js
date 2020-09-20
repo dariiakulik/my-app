@@ -1,80 +1,72 @@
 //Import the React and ReactDOM libraries
-import React, { useState } from "react";
+import React from "react";
 import about from "./aboutme.json"
 
 
 
 // Create a react component
-const AboutMeScreen = () => {
+class AboutMeScreen extends React.Component {
+  state = { className: "" };
 
-  const [setActive] = useState()
 
-  const OnScroll = e => {
-    setActive(e)
+
+  handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      if (!this.state.className) {
+        this.setState({ className: "backgroundImage" });
+      }
+    } else {
+      if (this.state.className) {
+        this.setState({ className: "backgroundImageDifferent" });
+      }
+    }
+
   }
-  /*const block = document.getElementById('block');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio < 0.5) { return; }
-      block.className = [entry.target.className];
-    });
-  }, {
-    threshold: [0.5, 0.5]
-  });
-
- <section class="blue"></section>
-        <section class="green"></section>
-        <h3
-          className="h3-me"
-        >
-          <section class="red" >  </section>
-        </h3>
-  Array.from(document.getElementsByTagName('section')).forEach(section => observer.observe(section))
-
-*/
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  render() {
+    return (
+      <div className="backgroundImage">
+        <div className={this.state.className} >
 
 
-  return (
-    <div className="scrollbar" OnScroll={OnScroll} style={{ overflowY: "scroll" }}>
-      <div
-        className="backgroundImage"
-      >
-        <div className="flex-button">
 
-        </div>
-        <div className="flex-center">
-          <h1
-            className="h1"
-          >
-            About me
+          <div className="flex-button">
+
+          </div>
+          <div className="flex-center">
+            <h1
+              className="h1"
+            >
+              About me
       </h1>
 
-          <img className="photo"
-            src="ph.jpg"
-            alt="myphoto"
-          />
+            <img className="photo"
+              src="ph.jpg"
+              alt="myphoto"
+            />
 
-          <h2
-            className="h2"
+            <h2
+              className="h2"
 
-          >
-            {about.Name}
-          </h2>
-          <h3
-            className="h3-me"
-          >
-            {about.aboutme}<br />
-            {about.aboutme2}<br />
-            {about.university}<br />
+            >
+              {about.Name}
+            </h2>
+            <h3
+              className="h3-me"
+            >
+              {about.aboutme}<br />
+              {about.aboutme2}<br />
+              {about.university}<br />
+            </h3>
 
-
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            {about.langueges} </h3>
+          </div>
         </div>
       </div>
-    </div >
-  )
 
+    )
+  }
 }
 
 
